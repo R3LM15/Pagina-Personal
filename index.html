@@ -5,24 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mateo Molina - Página Personal</title>
   <style>
-    /* Reset básico */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #121212;
-      color: #e0e0e0;
-      line-height: 1.6;
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+
+  /* Fondo con imagen */
+  background-image: url('fondo.jpg');
+  background-size: cover;          /* Para que la imagen cubra todo el fondo */
+  background-position: center;     /* Centra la imagen */
+  background-repeat: no-repeat;    /* No se repite la imagen */
+  background-attachment: fixed;    /* Para que el fondo no se mueva al hacer scroll */
+}
+
+        header {
+    text-align: center;
+    margin-bottom: 2rem;
     }
-    header {
-      text-align: center;
-      margin-bottom: 2rem;
+
+    .perfil-foto {
+    width: 150px;           /* Tamaño ancho */
+    height: 150px;          /* Tamaño alto igual para que sea un círculo */
+    object-fit: cover;      /* Ajusta la imagen para que no se distorsione */
+    border-radius: 50%;     /* Hace que la imagen sea circular */
+    display: block;
+    margin: 0 auto 1rem;    /* Centra horizontalmente y separa del texto */
+    border: 3px solid #bb86fc; /* Opcional: un borde bonito morado */
     }
     header h1 {
       font-size: 2.8rem;
@@ -96,14 +113,13 @@
       margin-top: 3rem;
     }
   </style>
-  <!-- FontAwesome para iconos sociales -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <h1>Mateo Molina</h1>
-    <p>Desarrollador, Constructor, Soñador</p>
-  </header>
+ <header>
+     <h1>Mateo Molina</h1>
+     <img src="perfil.png" alt="Foto de Mateo Molina" class="perfil-foto" />
+  <p>Desarrollador, Constructor, Soñador</p>
+</header>
 
   <section class="about">
     <h2>Sobre mí</h2>
@@ -133,12 +149,18 @@
     </ul>
   </section>
 
-  <section class="projects">
+
+<section class="Proyectos">
     <h2>Proyectos</h2>
     <ul>
-      <!-- Aquí puedes añadir tus proyectos -->
+    Actualmente estoy trabajando en un proyecto de robótica. 
+    Para el concurso de Puma Bot en Ambato, el cual se trata sobre pelea de robots, este proyecto es grupal.   
+    Y esperamos hacer honor a nuestra universidad.
+      
     </ul>
   </section>
+
+
 
   <section class="skills">
     <h2>Habilidades</h2>
@@ -148,23 +170,9 @@
       <li>Herramientas: Git</li>
     </ul>
   </section>
-
-  <section class="others">
-    <h2>Otros</h2>
-    <p>Graduado en Ingeniería en Sistemas. Apasionado por el aprendizaje continuo y la colaboración en proyectos open source.</p>
-  </section>
-
   <section class="End">
     <h2>Si no hay lucha, no hay progreso.</h2>
   </section>
-
-  <section class="socials">
-    <h2>Conéctate conmigo</h2>
-    <a href="mailto:mateostar02@gmail.com" title="Correo" aria-label="Enviar correo a Mateo Molina"><i class="fas fa-envelope"></i></a>
-    <a href="https://github.com/R3LM15/MetodosNumericos_MateoMolina" target="_blank" title="GitHub" aria-label="Perfil de GitHub de Mateo Molina"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/mateo-molina-145a85221/" target="_blank" title="LinkedIn" aria-label="Perfil de LinkedIn de Mateo Molina"><i class="fab fa-linkedin"></i></a>
-  </section>
-
   <footer>
     &copy; 2025 Mateo Molina. Todos los derechos reservados.
   </footer>
