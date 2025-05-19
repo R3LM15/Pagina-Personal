@@ -33,24 +33,34 @@
       font-size: 1.2rem;
       color: #7f8c8d;
     }
-    section.about {
+    section {
       background: white;
       padding: 1.5rem 2rem;
       border-radius: 8px;
       box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
       margin-bottom: 2rem;
     }
-    section.about h2 {
+    section h2 {
       margin-bottom: 1rem;
       color: #2980b9;
     }
-    section.about p {
+    section p, section ul {
       font-size: 1.1rem;
     }
-    section.socials {
-      text-align: center;
+    section ul {
+      list-style: inside disc;
+      margin-top: 0.5rem;
     }
-    section.socials a {
+    section ul li {
+      margin-bottom: 0.5rem;
+    }
+    .socials {
+      text-align: center;
+      background: none;
+      box-shadow: none;
+      margin-bottom: 3rem;
+    }
+    .socials a {
       display: inline-block;
       margin: 0 10px;
       color: #2980b9;
@@ -58,8 +68,15 @@
       text-decoration: none;
       transition: color 0.3s ease;
     }
-    section.socials a:hover {
+    .socials a:hover {
       color: #1abc9c;
+    }
+    .github-profile {
+      background: #f0f8ff;
+      padding: 1rem;
+      border-radius: 8px;
+      border: 1px solid #2980b9;
+      margin-bottom: 1rem;
     }
     footer {
       text-align: center;
@@ -74,25 +91,63 @@
 <body>
   <header>
     <h1>Mateo Molina</h1>
-    <p>Desarrollador, Innovador, Soñador</p>
+    <p>Desarrollador, Constructor, Soñador</p>
   </header>
 
   <section class="about">
     <h2>Sobre mí</h2>
     <p>
       Hola, soy Mateo Molina, un apasionado de la tecnología y la programación.
-      Me encanta crear soluciones que cambien el mundo para mejor.
-      Aquí podrás conocer un poco más sobre mí y mis proyectos.
+      Actualmente me encuentro estudiando, Ingeniera en sistemas, enfocado en ciencias computacionales en la Escuela Politécnica Nacional. Una persona profundamente responsable y autónoma, que se destaca como un líder nato en cualquier contexto. Gran facilidad de comunicación social que permite conectar de manera efectiva con las personas que me rodean, transmitiendo ideas con claridad y empatía. Un amante y un conocedor apasionado de las matemáticas, lo que me convierte en un gran estratega, capaz de abordar los problemas de manera lógica y precisa
     </p>
+  </section>
+
+  <section class="github">
+    <h2>Perfil de GitHub</h2>
+    <div class="github-profile">
+      <p>Explora mi código, proyectos y contribuciones en mi perfil de GitHub:</p>
+      <p><a href="https://github.com/r3lm15" target="_blank" rel="noopener noreferrer" style="color:#2980b9; font-weight: bold;">
+        https://github.com/r3lm15
+      </a></p>
+    </div>
+  </section>
+
+  <section class="interests">
+    <h2>Intereses</h2>
+    <ul>
+      <li>Inteligencia Artificial y Aprendizaje Automático</li>
+      <li>Desarrollo Web y Aplicaciones Móviles</li>
+      <li>Blockchain y Criptomonedas</li>
+      <li>Innovación tecnológica para impacto social</li>
+    </ul>
+  </section>
+
+  <section class="projects">
+    <h2>Proyectos</h2>
+    <ul>
+      
+    </ul>
+  </section>
+
+  <section class="skills">
+    <h2>Habilidades</h2>
+    <ul>
+      <li>Lenguajes: JavaScript, Python, Java, C++</li>
+      <li>Bases de datos: MySQL</li>
+      <li>Herramientas: Git</li>
+    </ul>
+  </section>
+
+  <section class="others">
+    <h2>Otros</h2>
+    <p> Graduado en Ingeniería en Sistemas. Apasionado por el aprendizaje continuo y la colaboración en proyectos open source.</p>
   </section>
 
   <section class="socials">
     <h2>Conéctate conmigo</h2>
-    <a href="mailto:mateostar02@gmail.com" title="Correo"><i class="fas fa-envelope"></i></a>
-    <a href="https://github.com/r3lm15" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-    <a href="https://linkedin.com/in/r3lm15" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-    <a href="https://twitter.com/r3lm15" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-    <!-- Agrega más redes aquí -->
+    <a href="mailto:mateostar02@gmail.com" title="Correo" aria-label="Enviar correo a Mateo Molina"><i class="fas fa-envelope"></i></a>
+    <a href="https://github.com/R3LM15/MetodosNumericos_MateoMolina" target="_blank" title="GitHub" aria-label="Perfil de GitHub de Mateo Molina"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/mateo-molina-145a85221/" target="_blank" title="LinkedIn" aria-label="Perfil de LinkedIn de Mateo Molina"><i class="fab fa-linkedin"></i></a>
   </section>
 
   <footer>
